@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>652</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1161</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Блюда</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>151</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Составить меню</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableDish">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>501</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Название</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Рецепт блюда</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Цена</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Себестоимость</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAddDish">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>60</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить блюдо</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>20</y>
+        <width>351</width>
+        <height>153</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="LayoutAddProduct_3">
+       <item>
+        <widget class="QLineEdit" name="lineEditNumDish">
+         <property name="text">
+          <string>Название</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditRecipeDish">
+         <property name="text">
+          <string>Рецепт(Продукты для приготовления, через запятую)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPriceDish">
+         <property name="text">
+          <string>Цена</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="pushButtonCancelDish">
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonSaveDish">
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Заказы</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableOrder">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>381</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Дата </string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Блюда в заказе</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Счет заказа</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>30</y>
+        <width>181</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Заказы за период</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAddOrder">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>60</y>
+        <width>181</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить заказ</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>30</y>
+        <width>351</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="LayoutAddProduct_2">
+       <item>
+        <widget class="QLineEdit" name="lineEditDateOrder">
+         <property name="text">
+          <string>Дата (пример 2019.01.01)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditDIshOrder">
+         <property name="text">
+          <string>Блюда через запятую</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButtonCancelOrder">
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonSaveOrder">
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>140</y>
+        <width>291</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="text">
+          <string>Начальная дата (пример 2019.01.01)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="text">
+          <string>Конечная дата</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonResponceDate">
+         <property name="text">
+          <string>Составить отчет</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonCancelhideResponceDate">
+         <property name="text">
+          <string>Отмена</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>100</y>
+        <width>181</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEditNumOrderForFile">
+         <property name="text">
+          <string> Номер заказа</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonAddOrderFile">
+         <property name="text">
+          <string>Сохранить заказ в отчет</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Продукты</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButtonProductFIle">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>20</y>
+        <width>151</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Составить отчет</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAddPosition">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>60</y>
+        <width>151</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить позицию</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableProduct">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>381</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Название</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Кол-во на складе</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Стоимость</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>20</y>
+        <width>351</width>
+        <height>122</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="LayoutAddProduct">
+       <item>
+        <widget class="QLineEdit" name="lineEditName">
+         <property name="text">
+          <string>Название продукта</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditCount">
+         <property name="text">
+          <string>Кол-во на складе</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPrice">
+         <property name="text">
+          <string>Себестоимость</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButtonCancel">
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonSave">
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
